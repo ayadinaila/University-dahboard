@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='analyse.css')}}"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.google.com/specimen/Montserrat"
+    />
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='numbers.js')}}"></script>
+  </head>
+  <body>
+    <div class="analyse">
+      <header>
+        <nav>
+          <img
+            src="{{url_for('static', filename='images/pravan-logo.png')}}"
+            alt=""
+          />
+          <div class="nav-right">
+            <div class="content">
+              <h2>2019</h2>
+              <h5 id="year"></h5>
+              <p>Best student :18.87</p>
+              <h4>Dickens Christian</h4>
+            </div>
+            <div class="content">
+              <h2>2020</h2>
+              <h5 id="2020"></h5>
+              <p>Best student :17.70</p>
+              <h4>Lee Oliver</h4>
+            </div>
+            <div class="content">
+              <h2>2021</h2>
+              <h5 id="2021"></h5>
+              <p>Best student :16.97</p>
+              <h4>Nolan Abigail</h4>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="aside">
+        <div class="aside-left">
+          <div>
+            <a href="{{url_for('index')}}">
+              <i class="icon fa-solid fa-house"></i
+            ></a>
+          </div>
+          <div>
+            <a href="{{url_for('analyse')}}"
+              ><i class="icon fa-solid fa-chart-line"></i
+            ></a>
+          </div>
+
+          <a href="{{url_for('dashboard')}}"
+            ><i class="icon bx bxs-dashboard"></i
+          ></a>
+        </div>
+        <!-- <div class="aside-right">
+               
+                    <div class="acueil"> <a href=""><li>Acueil</li></a></div>
+                   
+                    <div class="analyse"><a href=""><li>Analyse</li></a></div>
+                    <a class="dashboard" href=""><li>Dashboard</li></a>
+               
+            </div> -->
+        <div class="table-content">
+          <select name="choix" id="choix">
+            <option value="2021" onclick="get2021()">2021</option>
+            <option value="2020" onclick="get2020()">2020</option>
+            <option value="2019" selected onclick="get2019()">2019</option>
+          </select>
+
+          <main>
+            <div class="div-content table">
+              <table>
+                <tr>
+                  <th class="number">Année</th>
+                  <th class="number">Matricule</th>
+                  <th class="text">Nom</th>
+                  <th class="text">Prénom</th>
+
+                  <th class="text">Sex</th>
+                  <th class="text">Spécialité</th>
+                  <th class="number">Moyenne</th>
+                </tr>
+              </table>
+            </div>
+          </main>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+main{
+    width: 60vw;
+  height: 60vh;
+  overflow-y: scroll;
+  box-shadow:
+  10px 10px 4px -5px rgba(	232	,196	,196,0.5);
+  background-color:rgba( 	232	,196	,196,0.9);
+}
+.div-content{
+   box-shadow: none; 
+   position: relative;
+    width: 100%;
+    top: 0;
+    box-shadow: 0;
+    margin-top: 0;
+    overflow-y: scroll;
+}
+.div-content table{
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    overflow-y: scroll;
+}
+th{
+    color: #4C0033;
+}
+table,tr,th{
+    border-collapse:collapse;
+    text-align: center;
+    padding: 5px ;
+}
+td{
+    color: #AA7070;
+}
+.table-content{
+position: relative;
+  left: 25%;
+  top: 25%;
+}
+#choix{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color:rgba( 	232	,196	,196,0.9) ;
+    border-radius: 40px;
+    margin-bottom: 8px;
+    color: #4C0033;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 90%;
+    font-size: 16px;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    position: fixed;
+    left: 18%;
+    top: 30px;
+    filter: blur(100);
+
+}
+.nav-right .content{
+    text-align: center;
+    width: 130px;
+    padding: 5px;
+    height: 110px;
+    /* border-radius: 20px; */
+    background-color: #AA7070;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+}
+.nav-right .content h2{
+    
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E3C4A8;
+    color:#E3C4A8
+}
+.nav-right .content p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#4C0033;
+    font-weight: 600;
+}
+.nav-right .content h4{
+    color:#4C0033;
+    font-weight: 600;
+}
+#year{
+    color: #E3C4A8;
+}

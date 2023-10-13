@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.google.com/specimen/Montserrat"
+    />
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </head>
+  <body>
+    <div class="index">
+      <header>
+        <nav>
+          <img
+            src="{{url_for('static', filename='images/pravan-logo.png')}}"
+            alt=""
+          />
+          <div>
+            <h2 id="text-h3" class="typing-demo">
+              Dashboard de L'université PRAVAN
+            </h2>
+          </div>
+        </nav>
+      </header>
+      <aside class="aside">
+        <div class="aside-left">
+          <div>
+            <a href="{{url_for('index')}}"></a>
+            <i class="icon fa-solid fa-house" onclick="index()"></i>
+          </div>
+          <div>
+            <a href="{{url_for('analyse')}}"
+              ><i class="icon fa-solid fa-chart-line" onclick="analysed()"></i
+            ></a>
+          </div>
+
+          <a href="{{url_for('dashboard')}}"
+            ><i class="icon bx bxs-dashboard"></i
+          ></a>
+        </div>
+        <!-- <div class="aside-right">
+               
+                    <div class="acueil"> <a href="{{url_for('index')}}"><li>Acueil</li></a></div>
+                   
+                    <div class="analyse"><a href="{{url_for('analyse')}}"><li>Analyse</li></a></div>
+                    <a class="dashboard" href=""><li>Dashboard</li></a>
+               
+            </div> -->
+
+        <main class="content-index">
+          <div class="div-content">
+            <p>
+              <li>
+                Ce site représente un tableau de bord d'une université nommé
+                PRAVAN.
+              </li>
+              <br />
+              <li>
+                Cette université contient des données des étudiants des trois
+                dernière années 2019 2020 2021 <br />
+                de spécialité différentes.
+              </li>
+              <li>
+                Dont l'objectif est d'analyser ses données et les représenter
+                sous forme de statistiques
+              </li>
+            </p>
+          </div>
+        </main>
+      </aside>
+    </div>
+  </body>
+</html>
